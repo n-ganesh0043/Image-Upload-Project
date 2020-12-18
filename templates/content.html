@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+<br><br><br>
+    <h2 align="center" style="font-family: Algerian;font-size: 50px">PLEASE UPLOAD AN IMAGE</h2>
+    <form method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    <table align="center" border="0">
+            <tr>
+        <th>NAME OF IMAGE ::</th>
+        <td><input type="text" required name="image_nm"></td>
+    </tr>
+    <tr>
+        <th>IMAGE UPLOAD ::</th>
+        <td><input type="file" required name="file_up1"></td>
+    </tr>
+    <tr>
+        <th colspan="2" style="text-align: center"><br><button type="submit" class="btn btn-success">UPLOAD</button> </th>
+    </tr>
+    </table>
+    </form>
+{% for x in messages %}
+    <font style="font-size: 30px;color: white"> {{ x }}</font>
+    {% endfor %}
+{% endblock %}

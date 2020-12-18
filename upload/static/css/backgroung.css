@@ -1,0 +1,35 @@
+body{
+    background-image: url("../images/backgroundimg.jpg");
+    background-size: 100%;
+}
+h1{
+    padding-top: 100px;
+    font-family: Algerian;
+    font-size: 70px;
+    color: red;
+    text-shadow: black 8px 8px 9px;
+}
+
+marquee{
+    font-size: 30px;
+    background-color: wheat;
+    font-family: "Arial Black";
+    color: black;
+}
+.tb1 th{
+    text-align: center;
+    font-size: 60px;
+    background-color: wheat;
+    color: red;
+    width: 200px;
+}
+.tb1 td{
+    font-size: 30px;
+    font-family: Algerian;
+    text-align: center;
+    background-color: aqua;
+}
+table{
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px red;
+}
